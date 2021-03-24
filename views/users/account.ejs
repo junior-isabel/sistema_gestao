@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+      <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+      <link rel='stylesheet' href='/stylesheets/form.css' />
+    </head>
+    <body>
+
+      <div class="container">
+        <form action="/login" method="post">
+          <div class="imgcontainer">
+            <img src="/images/login.jpg" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <fieldset><legend>Student Information</legend>
+              <div class="row">
+                <div class="col-auto">
+                  <label for="uname"><b>first name</b></label>
+                  <input type="text" placeholder="Enter Username" name="firstname"
+                    required>
+
+                </div>
+                <div class="col-auto">
+                  <label for="uname"><b>last name</b></label>
+                  <input class="form-input" type="text" placeholder="Enter Lastname" name="lastname"
+                    required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-auto">
+                  <label for="gender"><b>Gender</b></label>
+                  <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female"> <label
+                    for="female">Female</label>
+
+                </div>
+                <div class="col-auto">
+                  <label for="date_birth">Date Birth</label>
+                  <input type="date" name="date_birth" id="date_birth">
+
+                </div>
+                <div class="col-auto">
+                  <div class="group-input">
+                    <label for="phone_number"><b>Contact No. </b></label>
+                    <input type="tel" name="phone_number" id="phone_number">
+
+                  </div>
+
+                </div>
+              </div>            
+
+              <div class="form-control">
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email" id="email" required>
+
+              </div>
+              <div class="row">
+                <label for="address"><b>Address</b></label>
+                <textarea type="text" name="address" id="address"></textarea>
+              </div>
+              <div class="row">
+                <label for="chinese_level"><b>Chinese Level</b></label>
+                <select name="chinese_level" id="chinese_level" required>
+                  <option value="none" disabled selected>select one chinse level</option>
+                </select>
+
+              </div>
+
+            </fieldset>
+
+            <fieldset><legend>Login Information</legend>
+            
+            </fieldset>
+            <fieldset>
+              <legend>Resume Information</legend>
+            </fieldset>
+            <fieldset><legend>Image Information</legend>
+            </fieldset>
+            <button type="submit">Register</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember
+              me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="reset" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="/">login</a></span>
+          </div>
+        </form>
+      </div>
+    </body>
+  </html>
